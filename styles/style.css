@@ -124,8 +124,7 @@ input[type="password"] {
   width: 100%;
   padding: 7px;
   font-size: 14px;
-  transition: 0.3s border;
-  transition: 0.3s filter;
+  transition: border 0.3s, filter 0.3s;
 }
 
 input:invalid {
