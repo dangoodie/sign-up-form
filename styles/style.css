@@ -22,10 +22,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   flex: 1;
-}
-
-.form-container {
-  flex: 2;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.1));
 }
 
 .logo-container {
@@ -33,7 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, 0.1);
   padding-top: 20px;
   margin-top: 20vh;
 }
@@ -43,8 +40,83 @@ body {
   bottom: 5px;
 }
 
-
 .logo {
   width: 100px;
   height: auto;
+}
+
+.form-container-bg {
+  flex: 1.5;
+  background-color: #d9d0d0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.cta,
+.form-white,
+.login-text {
+  padding-left: 50px;
+  padding-right: 200px;
+}
+
+.submit-btn {
+  margin-left: 50px;
+  margin-right: 200px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 40px;
+  background-color: #161c33;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.1));
+
+}
+
+.cta-description {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.cta-one-line {
+  margin-bottom: 50px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-cell {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-white {
+  background-color: white;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 25px;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.1));
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  background-color: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
 }
